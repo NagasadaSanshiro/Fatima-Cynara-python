@@ -25,7 +25,6 @@ def MaxDec( p ):
         
     return maxDec
 
-
 if os.path.exists('input.dat'):
     fileIn = open( 'input.dat' , 'r' )
     fileOut = open( 'output.dat', 'w+' )
@@ -47,14 +46,11 @@ if os.path.exists('input.dat'):
         if not done:
             print("invalid constant or variable")  
         
-        
         price = CalPrice( constantP, constantA, constantB, constantC, constantD, valK )
         fileOut.write('The largest decline is {0:.6f} \n ' .format(MaxDec(price)))
         #print('The largest decline is {0:.6f} ' .format(MaxDec(price)))
 else:
     print("input file dosen't exist")
-    
-
 
 
 # done = False
@@ -101,12 +97,6 @@ else:
 # done = False
 
 # price = CalPrice( constantP, constantA, constantB, constantC, constantD, valK )
-#        
 # print('The largest decline is {0:.6f} ' .format(MaxDec(price)))
 
 #print( price )
-
-
-
-
-
